@@ -20,7 +20,6 @@ body {
     height: 100vh; /* Altura completa de la ventana */
     padding: 20px;
     text-align: center; /* Aseguramos que el contenido dentro del contenedor esté centrado */
-    margin-left: 85%;
   }
   
   /* Logo */
@@ -35,13 +34,14 @@ body {
   button.registrar {
     margin-top: 60%;
     background-color: #ff0019; /* Rojo Danger */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     border: 2px solid #ff0019; /* Borde para consistencia */
     border-radius: 0; /* Borde recto */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transición de color */
-    width: 200px; /* Ancho fijo de los botones */
+    width: 400px; /* Ancho fijo de los botones */
+    height: 40px;
     text-align: center;
     margin-bottom: 10px; /* Menos separación entre los botones */
   }
@@ -54,14 +54,20 @@ body {
   /* Botón de LOG IN */
   button.login {
     background: none;
-    color: red;
+    margin-top: -5%;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     border-radius: 0; /* Borde recto */
-    border: 0;
+    border: 1px solid rgb(74, 74, 74);
     cursor: pointer;
     transition: color 0.3s ease, border-color 0.3s ease; /* Transición solo de color y borde */
     width: 200px; /* Ancho fijo de los botones */
     text-align: center;
+    width: 400px; /* Ancho fijo de los botones */
+    height: 40px;
+    padding: 9px;
+
+
     margin-bottom: 20%;
     padding: 0;
   }
@@ -75,6 +81,41 @@ body {
   .login {
     display: flex;
     flex-direction: column; /* Los botones se apilan uno debajo del otro */
-    align-items: center; /* Los botones se centran horizontalmente */
+    align-items: center;
   }
+  .login p{
+    margin-top: 2%;
+  }
+  /* Estilo para el video de fondo */
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  
+    /* Filtros más fuertes */
+    filter: grayscale(100%) brightness(30%) contrast(80%);
+    opacity: 0.2; /* Aún más transparente */
+  }
+/* Estilo para el contenido superpuesto */
+.content {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima del video */
+  color: white;
+  text-align: center;
+  padding-top: 20vh; /* Baja el contenido un poco */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para ajustar más el fondo si es necesario */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita scroll si no es necesario */
+  height: 100%; /* Asegura que el contenedor ocupe toda la pantalla */
+}
+
   

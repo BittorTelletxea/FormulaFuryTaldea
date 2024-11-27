@@ -1,4 +1,4 @@
-import '../css/lasterketa.css';
+import '../css/orriNagusia/lasterketa.css';
 
 function Lasterketa() {
   return (
@@ -27,6 +27,23 @@ function Lasterketa() {
             <p>Zure iritzia garrantzitsua da guretzat!</p>
             <button className='registrar'>KONTAKTATU</button><br />
         </div>
+        </div>
+        <div className='sozialak'>
+            <p>SARE SOZIALAK</p>
+        </div>
+        <div className='blanco3'>
+            <div className='imagenes'>
+            <div className='instagram'>
+                <img src="../../public/images/instagram.png" alt="" />
+            </div>
+            <div className='x'>
+                <img src="../../public/images/x.png" alt="" />
+            </div>
+            
+            <div className='tiktok'>
+                <img src="../../public/images/tiktok.png" alt="" />
+            </div>
+            </div>
         </div>
     </div>
     </>

@@ -8,8 +8,10 @@ body {
     font-family: 'MiFuente', sans-serif;
 }
 .container1{
+  background-color: black;
     position: fixed;
     margin-left: 10%;
+    width: 80%;
 }
 .argazkiak{
     display: flex;
@@ -63,3 +65,7 @@ body {
   .kontakt{
     text-align: center;
   }
+
+
+  
+  
