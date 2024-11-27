@@ -1,4 +1,8 @@
+<<<<<<< HEAD:ForumulaFury/src/components/Lasterketa.jsx
 import '../css/orriNagusia/lasterketa.css';
+=======
+import '../../css/orriNagusia/lasterketa.css';
+>>>>>>> cd0532ca9927426cc74b9e80473b1eb2afa0ce30:ForumulaFury/src/components/orrinagusia/Lasterketa.jsx
 
 function Lasterketa() {
   return (
@@ -25,7 +29,7 @@ function Lasterketa() {
         <div className='blanco2'>
             <div className='kontakt'>
             <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='registrar'>KONTAKTATU</button><br />
+            <button>Kontaktatu</button>
         </div>
         </div>
         <div className='sozialak'>
