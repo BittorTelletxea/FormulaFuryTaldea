@@ -3,7 +3,7 @@ import '../css/orriNagusia/footer.css';
 function Footer() {
   return (
     <>
-      <div className='container text-center '>
+      <div className='container1 text-center '>
         <div className='argazkiak'>
         <div className='ligak'>
           <div className='img'>
