@@ -1,4 +1,4 @@
-import '../css/footer.css';
+import '../css/orriNagusia/footer.css';
 
 function Footer() {
   return (
