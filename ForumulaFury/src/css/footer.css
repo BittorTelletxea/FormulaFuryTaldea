@@ -1,23 +1,27 @@
 @font-face {
     font-family: 'MiFuente';
-    src: url('fonts/horizon.otf') format('truetype');
+    src: url('../fonts/horizon.otf') format('truetype');
   }
 body {
     margin: auto;
     background-color: rgb(0, 0, 0);
-    font-family: 'Playfair Display', serif; 
     font-family: 'MiFuente', sans-serif;
+}
+.container1{
+    position: fixed;
+    margin-top: 14%;
+    margin-left: 10%;
 }
 .argazkiak{
     display: flex;
     color: grey;
-    width: 70%;
+    width: 50%;
     text-align: center;
 
 }
 
 .argazkiak img{
-    width: 50%;
+    width: 30%;
 }
 .argazkiak p {
     color: rgb(69, 68, 68); /* Color inicial */
@@ -26,6 +30,7 @@ body {
 .ligak p{
     color: rgb(213, 7, 7);
 }
+
   
   /* Cambiar a rojo en hover, excepto en 'Ligak' */
   .argazkiak div:not(.ligak):hover p {
@@ -35,4 +40,7 @@ body {
     width: 300px;
 }
 .taldea img{
+}
+.logo img{
+    width: 500px;
 }
