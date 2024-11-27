@@ -1,4 +1,4 @@
-import './style.css';
+import '../css/footer.css';
 
 function Nagusia() {
   return (
