@@ -8,6 +8,7 @@ body {
 }
 .hurrengo{
     font-family: 'MiFuente', 'sans-serif';
+    color: gray;
 }
 .lasterketa{
     
@@ -33,5 +34,23 @@ body {
     margin-left: 50%;
     margin-top: 3%;
     width: 50%;
+}
+
+.blanco2{
+    text-align: center;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.kontaktatu{
+    margin-top: 3%;
+}
+.kontaktatu p{
+    color: gray;
+}
+.kontakt{
+    text-align: center;
+    margin-left: 29%;
 }
 

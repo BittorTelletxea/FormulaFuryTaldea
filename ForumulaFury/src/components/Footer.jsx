@@ -3,7 +3,7 @@ import '../css/footer.css';
 function Footer() {
   return (
     <>
-      <div className='container1 text-center '>
+      <div className='container1 text-center fixed-bottom'>
         <div className='argazkiak'>
         <div className='ligak'>
           <div className='img'>
