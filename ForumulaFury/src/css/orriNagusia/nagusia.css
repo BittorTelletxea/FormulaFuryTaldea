@@ -1,0 +1,53 @@
+.ligak-kudeatu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+}
+
+.ligak-ikusi {
+    
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.ligak-ikusi img {
+
+    width: 5vh;
+    height: 5vh;
+}
+
+.team {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.liga-sortu {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.liga-sortu button {
+    background-color: red;
+    color: white;
+} 
+
+.puntuak {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dirua {
+    display: flex;
+
+}
+
+
+
