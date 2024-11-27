@@ -4,7 +4,7 @@ import Liga from '../components/Ligak';
 function Nagusia() {
   return (
     <>
-      <div id="nagusia">
+      <div id="nagusia" className='container'>
         <div className='ligak-kudeatu'>
           <div className='liga-sortu'>
               <h4>NIRE LIGAK</h4>
