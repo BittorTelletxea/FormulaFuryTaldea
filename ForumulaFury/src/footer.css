@@ -4,14 +4,14 @@
   }
 body {
     margin: auto;
-    background-color: rgb(27, 25, 25);
+    background-color: rgb(0, 0, 0);
     font-family: 'Playfair Display', serif; 
     font-family: 'MiFuente', sans-serif;
 }
 .argazkiak{
     display: flex;
     color: grey;
-    width: 100%;
+    width: 70%;
     text-align: center;
 
 }
@@ -31,3 +31,8 @@ body {
   .argazkiak div:not(.ligak):hover p {
     color: red;
   }
+.img{
+    width: 300px;
+}
+.taldea img{
+}
