@@ -1,5 +1,5 @@
-import '../css/orriNagusia/nagusia.css';
-import Liga from '../components/Ligak';
+import '../../css/orriNagusia/nagusia.css';
+import Liga from './Ligak';
 
 function Nagusia() {
   return (

@@ -1,4 +1,4 @@
-import '../css/orriNagusia/footer.css';
+
 
 function Hasiera() {
   return (

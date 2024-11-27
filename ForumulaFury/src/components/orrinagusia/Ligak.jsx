@@ -1,4 +1,4 @@
-import '../css/orriNagusia/nagusia.css';
+import '../../css/orriNagusia/nagusia.css';
 
 function Liga() {
   return (

@@ -1,4 +1,4 @@
-import '../css/lasterketa.css';
+import '../../css/orriNagusia/lasterketa.css';
 
 function Lasterketa() {
   return (
@@ -25,7 +25,7 @@ function Lasterketa() {
         <div className='blanco2'>
             <div className='kontakt'>
             <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='registrar'>KONTAKTATU</button><br />
+            <button>Kontaktatu</button>
         </div>
         </div>
     </div>
