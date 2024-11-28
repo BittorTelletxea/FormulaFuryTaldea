@@ -1,30 +1,54 @@
 import '../../css/kontaktuaOrria/kontaktua.css';
+import React, { useRef, useState } from "react";
 
 function Kontaktua() {
+    const [value, setValue] = useState(""); 
+    const textareaRef = useRef(null); 
+  
+    const handleInput = (e) => {
+      const textarea = textareaRef.current;
+      setValue(e.target.value);
+      textarea.style.height = "auto"; 
+      textarea.style.height = `${textarea.scrollHeight}px`; 
+    };
   return (
     <>
         <div className='kontaktatu'>
-                <p>GUREKIN KONTAKTATU</p><br/>
+            <div>
+                <h1>GUREKIN KONTAKTATU</h1><br/>
+            </div>  
             <div className='blanco2'>
                 <div className='kontakt'>
                     <p>Zure iritzia garrantzitsua da guretzat!</p>
                     <form>
                         <div className="form-row">
                             <div className="form-group col-md-6">
-                                <label for="inputEmail">Izena: </label>
-                                <input type="email" className="form-control" id="inputEmail" placeholder="izena"/>
+                                
+                                <input type="text"  id="inputEmail" placeholder="izena"/>
+                                
+                                
+                                <input type="text" id="abizenaInput" placeholder="abizena"/>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="abizenaInput">Abizena: </label>
-                                <input type="password" className="form-control" id="abizenaInput" placeholder="abizena"/>
+                            <div className="form-group col-md-6">
+                                
+                                <input type="email" id="emailInput" placeholder="email"/>
+                                
+                                <input type="number" id="telInput" placeholder="640 26 60 09"/>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="emailInput">email: </label>
-                                <input type="email" className="form-control" id="emailInput" placeholder="email"/>
+                            <div className="form-group col-md-6">
+                                
+                                <textarea 
+                                    name="mazuaInput" 
+                                    id="mezuaInput"
+                                    placeholder='Idatzi beharrezko mezua...'
+                                    ref={textareaRef}
+                                    value={value}
+                                    onChange={handleInput} 
+                                ></textarea>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="mezuaInput">Mezua: </label>
-                                <textarea name="mazuaInput" id="mezuaInput"></textarea>
+                            <div className="form-group">
+                                
+                                <button className='registrar'>Bidali</button>
                             </div>
                         </div>
                     </form>

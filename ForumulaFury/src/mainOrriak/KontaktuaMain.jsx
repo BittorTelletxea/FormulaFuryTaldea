@@ -13,6 +13,5 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
     <Kontaktua/>
-    <Footer/>
   </StrictMode>,
 )
