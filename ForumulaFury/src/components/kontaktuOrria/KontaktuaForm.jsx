@@ -1,4 +1,4 @@
-import '../../css/kontaktuaOrria/kontaktua.css';
+
 import React, { useRef, useState } from "react";
 
 function Kontaktua() {
@@ -48,7 +48,7 @@ function Kontaktua() {
                             </div>
                             <div className="form-group">
                                 
-                                <button className='registrar'>Bidali</button>
+                                <button className='bidali'>Bidali</button>
                             </div>
                         </div>
                     </form>

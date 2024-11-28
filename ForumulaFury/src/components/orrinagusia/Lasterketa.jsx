@@ -26,7 +26,7 @@ function Lasterketa() {
         <div className='blanco2'>
             <div className='kontakt'>
             <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='sortuLiga'>Kontaktatu</button>
+            <button className='sortuLiga'><a href="../../kontaktua.main">Kontaktatu</a></button>
         </div>
         </div>
         <div className='sozialak'>

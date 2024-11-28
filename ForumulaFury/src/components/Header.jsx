@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import '../css/orriNagusia/header.css';
+import '../css/header.css';
+
+
 
 function Hasiera() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +12,7 @@ function Hasiera() {
 
   return (
     <>
-      {/* Fondo oscuro detrás de la barra */}
+      
       <div className={`overlay ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
 
       <div className="container text-center">
