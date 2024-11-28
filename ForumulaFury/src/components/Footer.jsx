@@ -1,4 +1,4 @@
-import '../css/footer.css';
+import '../css/OrriNagusia/footer.css';
 
 function Footer() {
   return (
@@ -18,9 +18,7 @@ function Footer() {
           <p>Klasifikazioa</p>
         </div>
         <div className='taldea'>
-          <div className='img'>
           <img src="../../public/images/taldea.png.png"  />
-          </div>
           <p>Taldea</p>
         </div>
         <div className='merkatua'>

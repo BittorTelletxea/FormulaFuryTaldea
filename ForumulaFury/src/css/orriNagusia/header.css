@@ -1,0 +1,138 @@
+/* Header styles */
+@font-face {
+  font-family: 'MiFuente2';
+  src: url('../../fonts/Questrial/Questrial-Regular.ttf') format('truetype');
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative; /* Para posicionar el botón de hamburguesa */
+    padding: 10px 20px;
+  }
+  .logo{
+    width: 90%;
+  }
+  /* Logo centrado */
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Botón de hamburguesa (a la izquierda) */
+  .hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white; /* Ajusta según tu tema */
+    position: absolute;
+    left: 20px; /* Posición fija a la izquierda */
+  }
+  
+  /* Sidebar styles */
+.sidebar {
+  font-family: 'MiFuente2', sans-serif;
+  position: fixed;
+  top: 0;
+  left: -300px; /* Oculto inicialmente */
+  width: 290px;
+  height: 100%;
+  background-color: #191818; /* Gris oscuro */
+  color: white;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 1000; /* Barra lateral encima de todo */
+}
+
+  
+  .sidebar.open {
+    left: 0; /* Visible cuando se abre */
+  }
+  
+  .sidebar .close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  /* Fondo oscuro detrás de la barra lateral */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Debe estar debajo de la barra pero encima del contenido */
+    display: none; /* Oculto inicialmente */
+  }
+  
+  .overlay.active {
+    display: block; /* Mostrar cuando la barra está activa */
+  }
+  .perfil{
+    display: flex;
+    justify-content: space-around;
+  }
+  .perfil p{
+    font-family: 'MiFuente';
+    font-size: 12px;
+    margin-top: 5%;
+  }
+  .perfil img{
+    width: 20%;
+  }
+ 
+  li {
+    display: flex;
+    align-items: center; /* Asegura que el contenido esté alineado verticalmente */
+    padding-left: 4%;
+    padding-right: 4%;
+    color: gray;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  li img {
+    width: 22%;
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+  }
+  
+  li p {
+    margin: 0;
+    text-align: left; /* Alinea el texto hacia la izquierda */
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  }
+  
+ 
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .logo img {
+      height: 40px;
+    }
+  
+    .hamburger {
+      font-size: 20px;
+   
+    }
+}  

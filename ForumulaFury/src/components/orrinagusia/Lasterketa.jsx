@@ -1,5 +1,6 @@
 import '../../css/orriNagusia/lasterketa.css';
 
+
 function Lasterketa() {
   return (
     <>
@@ -25,7 +26,7 @@ function Lasterketa() {
         <div className='blanco2'>
             <div className='kontakt'>
             <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='registrar'>Kontaktatu</button>
+            <button className='sortuLiga'>Kontaktatu</button>
         </div>
         </div>
         <div className='sozialak'>

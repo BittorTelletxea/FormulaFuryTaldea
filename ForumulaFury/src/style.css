@@ -25,7 +25,7 @@ body {
   /* Logo */
   .logo img {
     margin-left: 4%;
-    max-width: 700px;
+    width: 1000px;
     height: auto;
     margin-bottom: 20px; /* Separación entre el logo y los botones */
   }
@@ -82,9 +82,12 @@ body {
     display: flex;
     flex-direction: column; /* Los botones se apilan uno debajo del otro */
     align-items: center;
+    text-decoration: none;
   }
-  .login p{
+  .login a{
     margin-top: 2%;
+    color: white;
+    text-decoration: none;
   }
   /* Estilo para el video de fondo */
   .video-background {
