@@ -1,5 +1,9 @@
 @font-face {
     font-family: 'MiFuente';
+    src: url('../../fonts/horizon.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MiFuente2';
     src: url('../../fonts/Madani-Arabic-Font-Family/Madani\ Arabic\ Extra\ Light.ttf') format('truetype');
   }
 body {
@@ -34,11 +38,14 @@ body {
 }
 
 .blanco2{
+
     text-align: center;
     display: flex;
-    background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
 }
 
 .blanco2 button {
@@ -48,16 +55,107 @@ body {
 }
 .kontaktatu{
 
+    display: flex;
     margin-top: 3%;
     border-radius: 3%;
-    display: flex;
-    padding: 5%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
 
 }
+
+.kontaktatu h1 {
+    color: white;
+}
 .kontaktatu p{
-    color: gray;
+
+    color: white;
+
 }
+
 .kontakt{
+    height: auto;
     text-align: center;
-    margin-left: 29%;
+   
+    width: 100%;
+
 }
+
+
+.kontakt form {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    
+}
+
+.form-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 2%;
+    color: white;
+    align-items: center;
+
+}
+
+.form-group button {
+    align-items: center;
+    margin: auto;
+}
+
+.form-group label {
+    margin-right: 2%;
+}
+
+.form-group input {
+    width: 100%;
+    margin-right: 2%;
+    background-color: rgb(42, 42, 48);
+    color: white;
+    height: 3ch;
+    border: none; 
+    border-bottom: 2px solid white; 
+    outline: none; 
+    padding: 5px 0; 
+    transition: border-color 0.3s ease; 
+    padding-left: 2.5%;
+}
+
+
+.form-group input:focus {
+    border-bottom-color: #00bfff; 
+}
+
+.form-group textarea {
+    width: 100%;
+    margin-right: 2%;
+    background-color: rgb(42, 42, 48);
+    color: white;
+    overflow: hidden; 
+    resize: none; 
+    height: auto;
+    border: none; 
+    border-bottom: 2px solid white; 
+    outline: none; 
+    padding: 5px 0; 
+    transition: border-color 0.3s ease; 
+    padding-left: 2.5%;
+}
+
+.form-group textarea:focus {
+    border-bottom-color: #00bfff; 
+}
+
