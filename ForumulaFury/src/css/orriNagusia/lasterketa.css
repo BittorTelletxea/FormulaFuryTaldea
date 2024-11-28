@@ -51,10 +51,13 @@ body {
 .kontaktatu p{
     color: gray;
 }
-.kontakt{
-    text-align: center;
-    margin-left: 29%;
+.kontaktatu1{
+  margin-top: 3%;
 }
+.kontaktatu1 p{
+  color: gray;
+}
+
 .container1 {
     background-color: #000000; /* Color de fondo claro */
     padding: 10px 0; /* Espaciado interno */

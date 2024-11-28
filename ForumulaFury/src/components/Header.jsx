@@ -21,7 +21,9 @@ function Hasiera() {
             ☰
           </button>
           <div className="logo">
+            <a href="../../main.html">
             <img src="../../public/images/logomainblanco.png" alt="Logo" />
+            </a>
           </div>
         </div>
 

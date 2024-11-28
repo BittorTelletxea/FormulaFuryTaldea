@@ -20,13 +20,13 @@ function Lasterketa() {
             <img src="../../public/images/Losail-removebg-preview.png" alt="" />
         </div>
         </div>
-        <div className='kontaktatu'>
+        <div className='kontaktatu1'>
             <p>GUREKIN KONTAKTATU</p>
         </div>
         <div className='blanco2'>
             <div className='kontakt'>
             <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='sortuLiga'><a href="../../kontaktua.main">Kontaktatu</a></button>
+            <button className='sortuLiga'><a href="../../kontaktua.html">Kontaktatu</a></button>
         </div>
         </div>
         <div className='sozialak'>
