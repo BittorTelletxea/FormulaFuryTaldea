@@ -14,8 +14,7 @@ function Hasiera() {
         <div className='login mt-4'>
           <button className='registrar'>SORTU KONTUA</button><br />
             <button className='login'>
-              <a href="../../main.html">
-              KONTUA BADUT</a>
+            <a href="/main.html">KONTUA BADUT</a>
             </button>
         </div>
       </div>
