@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../fonts/horizon.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MiFuente2';
+    src: url('../../fonts/Questrial/Questrial-Regular.ttf') format('truetype');
+  }
+body {
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+.blanco-liga{
+    font-family: 'MiFuente2', sans-serif;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.blanco-liga {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .blanco-liga:hover {
+    background-color: #242323; /* Gris oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  .blanco-liga:hover .dirua h3, 
+  .blanco-liga:hover p,
+  .blanco-liga:hover h3 {
+    color: white; /* Asegúrate de que todos los textos cambien a blanco */
+  }
+  
+  .blanco-liga:hover img {
+    filter: brightness(0.8); /* Opcional: oscurece las imágenes ligeramente */
+  }
+  .usuario{
+  }
+  p.usuarioIzena{
+    font-size: 40px;
+  }
+  p.usuarioDirua{
+    margin-top: -5%;
+    color: gray;
+    font-size: 19px;
+  }
+  .puntuak{
+    display: flex;
+
+  }
+  p.punto{
+    font-family: 'MiFuente';
+    font-size: 29px;
+    margin-right: 9%;
+  }
+  p.prfy{
+    
+    color: gray;
+  }
+ 
+  
