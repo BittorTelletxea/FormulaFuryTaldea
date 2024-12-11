@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../js/fonts/horizon.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MiFuente2';
+    src: url('../../js/fonts/Questrial/Questrial-Regular.ttf') format('truetype');
+  }
+  .cont{
+    background-color: rgb(11, 15, 27);
+}
+.dena{
+
+    font-family: 'MiFuente';
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+
+    display: flex;
+    font-size: 40px;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 2%;
+}
+.f1{
+    margin-left: 4%;
+    color: red;
+}
+
+.plus img{
+    width: 10%;
+}
+button.hamburger{
+    margin-left: 2%;
+}
+.sekzioak{
+    margin-top: 1%;
+   
+
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.sekzioak p{
+    font-size: 23px;
+}
+.taldea{
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 2px solid red;
+    width: 30%;
+}
+
+
+.gidariak, .puntuak{
+    color: gray;
+}
+.puntuak{
+    padding-left: 10%;
+    padding-right: 10%;
+}

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../js/fonts/horizon.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MiFuente2';
+    src: url('../../js/fonts/Questrial/Questrial-Regular.ttf') format('truetype');
+  }
+.blanco-liga{
+    display: flex;
+    background-color: white;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.blanco-liga {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .blanco-liga:hover {
+    background-color: #242323; /* Gris oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  .blanco-liga:hover .dirua h3, 
+  .blanco-liga:hover p,
+  .blanco-liga:hover h3 {
+    color: white; /* Asegúrate de que todos los textos cambien a blanco */
+  }
+  
+  .blanco-liga:hover img {
+    filter: brightness(0.8); /* Opcional: oscurece las imágenes ligeramente */
+  }
+  
+.hurrengo{
+    font-family: 'MiFuente', 'sans-serif';
+    color: gray;
+}
+.sortu{
+    display: flex;
+    justify-content: space-between;
+}
+button.sortuLiga {
+    background-color: #ff0019; /* Rojo Danger */
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: 2px solid #ff0019; /* Borde para consistencia */
+    border-radius: 0; /* Borde recto */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de color */
+    width: 200px; /* Ancho fijo de los botones */
+    text-align: center;
+    margin-bottom: 10px; /* Menos separación entre los botones */
+  }
+  
+  button.sortuLiga:hover {
+    background-color: #000; /* Fondo negro en hover */
+    color: rgb(255, 0, 0); /* Texto blanco en hover */
+  }
+.team2{
+    display: flex;
+}
+.team img{
+    width: 10%;
+}
+.team h3{
+    margin-top: 2%;
+}
+.sortu p{
+    color: gray;
+}
+.puntuak{
+    display: flex;
+    margin-left: 15%;
+}
+.puntuak p{
+    color: gray;
+    margin-right: 4%;
+}
+.dirua{
+    margin-left: 40%;
+    display: flex;
+}
+.dirua img{
+    width: 70px;
+    height: 30px;
+}
+.dirua h3{
+    color: grey;
+}
+.diruaDena{
+    margin-top: -25%;
+
+    padding-bottom: 50%;
+}
+img.tres{
+    margin-left: 145%;
+    
+    width: 60px;
+    height: 60px;
+
+}
+.logo img{
+    width: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

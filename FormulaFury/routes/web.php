@@ -5,19 +5,26 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+
+
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('mainOrriak/loginMain', []);
 });
-
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
+Route::get('/nagusia', function () {
+    return Inertia::render('mainOrriak/nagusiaMain', []);
+});
+Route::get('/klasifikazioa', function () {
+    return Inertia::render('mainOrriak/klasifikazioaMain', []);
+});
+Route::get('/kontaktua', function () {
+    return Inertia::render('mainOrriak/kontaktuaMain', []);
+});
+Route::get('/taldea', function () {
+    return Inertia::render('mainOrriak/taldeaMain', []);
+});
+Route::get('/gidariak', function () {
+    return Inertia::render('mainOrriak/gidariakMain', []);
+});
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

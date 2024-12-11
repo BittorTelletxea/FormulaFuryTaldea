@@ -20,21 +20,5 @@ class UserController extends Controller
         
         return view('welcome', compact('users'));
     }
-
-    public function register() {
-
-        $izena = $_POST['erabiltzailea'];
-        $pasahitza = $_POST['pasahitza'];
-        $email = $_POST['email'];
-        $mota = "bezeroa";
-
-
-        User::create($izena, $email, $pasahitza, $mota);
-        $erabiltzaileak = User::get();
-
-        $userId = count($erabiltzaileak);
-        Bezeroa::create(0, 0, 100000000, $userId);
-        
-    }
 }
 
