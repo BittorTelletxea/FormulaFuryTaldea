@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('izena');
             $table->unsignedBigInteger('taldea');
             $table->integer('puntuak');
-            $table->unsignedBigInteger('jabea');
+            $table->unsignedBigInteger('jabea')->nullable();
             $table->string('kategoria');
             $table->integer('balioa');
+            $table->integer('erositako_prezioa')->nullable();
             $table->timestamps();
-
             $table->foreign('taldea')->references('id')->on('taldeak')->onDelete('cascade');
             $table->foreign('jabea')->references('id')->on('bezeroak')->onDelete('cascade');
         });

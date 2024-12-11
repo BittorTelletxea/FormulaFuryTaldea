@@ -29,20 +29,14 @@ class Bezeroa extends Model
 
     public function gidariak() {
 
-        return $this->belongsToMany(Gidaria::class)
-                    ->using(BezeroGidari::class)
-                    ->withPivot('erositako_prezioa')
-                    ->withTimestamps();
+        return $this->hasmany(Gidaria::class, 'jabea');
 
     }
 
-    public function taldeak() {
+    public function taldea() {
 
-        return $this->belongsToMany(Taldea::class)
-                    ->using(BezeroTalde::class)
-                    ->withPivot('erositako_prezioa')
-                    ->withTimestamps();
-                    
+        return $this->hasOne(Taldea::class, 'jabea');
+
     }
 
     public function ligak() {

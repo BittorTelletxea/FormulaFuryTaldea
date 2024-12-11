@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('taldeak', function (Blueprint $table) {
             $table->id();
             $table->string('izena');
-            $table->json('gidariak');
+            $table->json('gidariak')->nullable();
             $table->string('kotxea');
             $table->integer('puntuak');
-            $table->foreignId('jabea')->references('id')->on('bezeroak')->onDelete('cascade');
+            $table->unsignedBigInteger('jabea')->nullable();
+            $table->foreign('jabea')->references('id')->on('bezeroak')->onDelete('cascade');
             $table->integer('balioa');
+            $table->integer('erositako_prezioa')->nullable();
             $table->timestamps();
         });
     }

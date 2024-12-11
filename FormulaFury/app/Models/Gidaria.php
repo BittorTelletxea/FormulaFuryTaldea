@@ -17,16 +17,13 @@ class Gidaria extends Model
         'balioa'
     ];
 
-    public function bezeroak() {
+    public function bezeroa() {
 
-        return $this->belongsToMany(Bezeroa::class)
-                    ->using(BezeroGidari::class)
-                    ->withPivot('erositako_prezioa')
-                    ->withTimestamps();
+        return $this->belongsTo(Bezeroa::class);
 
     }
 
-    public function taldeak() {
+    public function taldea() {
 
         return $this->belongsTo(Taldea::class);
     }
