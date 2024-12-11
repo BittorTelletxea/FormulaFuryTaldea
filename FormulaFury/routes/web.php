@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 Route::get('/nagusia', function () {
     return Inertia::render('mainOrriak/nagusiaMain', []);
-});
+})->name('nagusia');
 Route::get('/klasifikazioa', function () {
     return Inertia::render('mainOrriak/klasifikazioaMain', []);
 });

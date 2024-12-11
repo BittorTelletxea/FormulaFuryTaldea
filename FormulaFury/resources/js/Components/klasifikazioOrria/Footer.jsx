@@ -25,7 +25,7 @@ function Footer() {
         </div>
         <div className='taldea'>
           <img src={taldea} alt="" />
-          <p>Taldea</p>
+          <a href='taldea'>Taldea</a>
         </div>
         <div className='merkatua'>
           <div className='img'>

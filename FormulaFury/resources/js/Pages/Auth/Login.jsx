@@ -15,7 +15,7 @@ export default function Login({ status, canResetPassword }) {
 
     const submit = (e) => {
         e.preventDefault();
-
+        console.log('sartu da'+ data.email + data.password + data.remember);
         post(route('login'), {
             onFinish: () => reset('password'),
         });
@@ -50,7 +50,7 @@ export default function Login({ status, canResetPassword }) {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                    <InputLabel htmlFor="password" value="Pasahitza" />
 
                     <TextInput
                         id="password"

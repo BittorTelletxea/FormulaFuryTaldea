@@ -40,7 +40,7 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'izena' => $request->name,
             'email' => $request->email,
-            'pasahitza' => Hash::make($request->password),
+            'password' => Hash::make($request->password),
             'mota' => 'bezero' 
         ]);
 
@@ -56,6 +56,6 @@ class RegisteredUserController extends Controller
         
 
         Auth::login($user);
-        return redirect(route('dashboard', absolute: false));
+        return redirect(route('nagusia', absolute: false));
     }
 }

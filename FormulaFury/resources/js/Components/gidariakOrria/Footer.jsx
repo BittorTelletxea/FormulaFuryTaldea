@@ -1,12 +1,9 @@
-import '../../../css/taldeaorria/footer.css';
+import '../../../css/taldeaOrria/footer.css';
 import casco from '../../../images/casco.png.png';
 import klasifikazioa  from '../../../images/klasifikazioa.png.png';
 import taldeaSelect  from '../../../images/taldeaSelected.png.png';
 import merkatua  from '../../../images/merkatua.png.png';
 import aktibitatea  from '../../../images/aktibitatea.png';
-
-
-
 
 function Footer() {
   return (

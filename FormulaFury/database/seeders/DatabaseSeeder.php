@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
         // Crea un usuario
         User::create([
             'izena' => 'Iker Atxaga',
-            'email' => 'atxaga@example.com',
-            'pasahitza' => '1234',
+            'email' => 'iachagaro22wg@ikzubirimanteo.com',
+            'password' => 'iachagaro22wg',
             'mota' => 'bezero',
         ]);
 

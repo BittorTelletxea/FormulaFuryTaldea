@@ -31,11 +31,14 @@
 .argazkiak img {
   max-width: 80px; /* Tamaño máximo estándar */
   height: auto; /* Mantener proporción */
+  margin-left: 36%;
 }
 
 .taldeaInput img {
   max-width: 200px; /* Imagen más grande para taldeaInput */
   height: auto; /* Mantener proporción */
+  margin-left: -1%;
+
 }
 
 .argazkiak div {

@@ -89,7 +89,7 @@ function Header() {
             <p>Taldea</p>
           </div>
           <div className='gidariak'>
-            <p>Gidariak</p>
+            <a href='gidariak'>Gidariak</a>
           </div>
           <div className='puntuak'>
             <p>Puntuak</p>
