@@ -1,27 +1,26 @@
 import { useState } from 'react';
-import '../../css/klasifikazioOrria/header.css';
+import '../../css/gidariaOrria/header.css';
 import '../../css/header.css';
 
 
 
+
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+    const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+    };
   return (
     <>
+    <div className='cont'>
     <div className='dena'>
-    
+
       <div className='header'>
         <p>FURY</p>
         <p className='f1'>F1 team </p>
       </div>
-      <div className='plus'>
-        <img src="/public/images/plus.png" alt="" />
-      </div>
+      
       <button className="hamburger" onClick={toggleMenu}>
             ☰
           </button>
@@ -73,8 +72,23 @@ function Header() {
               <p>Termino eta kondizioak</p>
               </li>
           </ul>
+          
         </div>
+        </div>
+        <div className='sekzioak'>
+        <div className='taldea'>
+            <p>Taldea</p>
+        </div>
+        <div className='gidariak'>
+            <p>Gidariak</p>
+        </div>
+        <div className='puntuak'>
+            <p>Puntuak</p>
+        </div>
+        </div>
+        
       </div>
+      
     </>
   );
 }

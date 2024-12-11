@@ -1,4 +1,4 @@
-import '../css/footer.css';
+import '../../css/taldeaorria/footer.css';
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
         <div className='argazkiak'>
         <div className='ligak'>
           <div className='img'>
-          <img src="../../public/images/ligakSelected.png.png"  />
+          <img src="../../public/images/casco.png.png"  />
           </div>
           <p>Ligak</p>
         </div>
@@ -19,9 +19,9 @@ function Footer() {
           Klasifikazioa
           </a>
         </div>
-        <div className='taldea'>
-          <img src="../../public/images/taldea.png.png"  />
-          <p>Taldea</p>
+        <div className='taldeaInput'>
+          <img src="../../public/images/taldeaSelected.png.png"  />
+          <a href="main.html">Taldea</a>
         </div>
         <div className='merkatua'>
           <div className='img'>

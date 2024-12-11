@@ -24,7 +24,11 @@
 .argazkiak .img {
   text-align: center;
 }
-
+a{
+  text-decoration: none;
+  color: gray;
+  font-size: 12px;
+}
 .argazkiak img {
   max-width: 80px; /* Tamaño máximo de la imagen */
   height: auto; /* Mantener proporción de la imagen */
@@ -41,6 +45,6 @@
   color: rgb(213, 7, 7);
 }
 
-.argazkiak div:not(.ligak):hover p {
+.argazkiak div:hover p, .argazkiak div:hover a {
   color: red; /* Cambiar color al pasar el cursor */
 }

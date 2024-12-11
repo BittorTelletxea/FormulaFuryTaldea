@@ -18,7 +18,7 @@ function Hasiera() {
       <div className="container text-center">
         <div className="header">
           <button className="hamburger" onClick={toggleMenu}>
-            ☰
+            ☰+
           </button>
           <div className="logo">
             <a href="../../main.html">

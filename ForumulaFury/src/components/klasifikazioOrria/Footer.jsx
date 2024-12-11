@@ -1,4 +1,4 @@
-import '../css/footer.css';
+import '../../css/klasifikazioOrria/footer.css';
 
 function Footer() {
   return (
@@ -7,17 +7,15 @@ function Footer() {
         <div className='argazkiak'>
         <div className='ligak'>
           <div className='img'>
-          <img src="../../public/images/ligakSelected.png.png"  />
+          <img src="../../public/images/casco.png.png"  />
           </div>
-          <p>Ligak</p>
+          <a href='main.html'>Ligak</a>
         </div>
         <div className='klasifikazioa'>
           <div className='img'>
-          <img src="../../public/images/klasifikazioa.png.png"  />
+          <img src="../../public/images/klasifikazioaSelected.png.png"  />
           </div>
-          <a href="kontaktua.html">
-          Klasifikazioa
-          </a>
+          <p>Klasifikazioa</p>
         </div>
         <div className='taldea'>
           <img src="../../public/images/taldea.png.png"  />

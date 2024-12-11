@@ -6,23 +6,27 @@
     font-family: 'MiFuente2';
     src: url('../../fonts/Questrial/Questrial-Regular.ttf') format('truetype');
   }
-.dena{
-    font-family: 'MiFuente';
+  .cont{
     background-color: rgb(11, 15, 27);
+}
+.dena{
+
+    font-family: 'MiFuente';
     display: flex;
     text-align: center;
     margin: auto;
-    height: 15vh;
+    height: 10vh;
     justify-content: center;
     align-items: center;
 }
 .header{
+
     display: flex;
     font-size: 40px;
     color: white;
-    width: 70%;
+    width: 40%;
     text-align: center;
-    margin-left: 20%;
+    margin-top: 2%;
 }
 .f1{
     margin-left: 4%;
@@ -34,4 +38,30 @@
 }
 button.hamburger{
     margin-left: 2%;
+}
+.sekzioak{
+    margin-top: 1%;
+   
+
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.sekzioak p{
+    font-size: 23px;
+}
+.taldea{
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 2px solid red;
+    width: 30%;
+}
+
+
+.gidariak, .puntuak{
+    color: gray;
+}
+.puntuak{
+    padding-left: 10%;
+    padding-right: 10%;
 }
