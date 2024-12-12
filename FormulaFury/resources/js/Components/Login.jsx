@@ -1,5 +1,5 @@
 import { useForm } from '@inertiajs/react';
-import '../../../css/loginOrria/login.css';
+import '../../css/loginOrria/register.css';
 import fondo from '@/../assets/video/video.mp4';
 
 function Login() {
@@ -33,7 +33,7 @@ function Login() {
         </div>
         </a>
 
-        <p>Sesioa hasi</p>
+        <p>Ongi etorri!</p>
         </div>
           <form className='login-form' onSubmit={submit}>
             <input
@@ -56,9 +56,14 @@ function Login() {
             />
             {errors.password && <div className="error-message">{errors.password}</div>}
 
-            <a className='forgot-password' href={route('password.request')}>
-              <b>Pasahitza ez dut gogoratzen</b>
-            </a>
+            <div className='onartu'>
+  <input type="checkbox" name="onartu" id="check" className="black-checkbox circular-checkbox" />
+  <p>
+    Irakurri dut eta onartzen dut Formula Fury enpresak zure datuekin 
+    <a href=""> nahi duena </a> egiten ahal duela
+  </p>
+</div>
+
             <button className='sartu' type='submit' disabled={processing}>Sartu</button>
           </form>
         </div>

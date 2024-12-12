@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../../css/header.css';
 import perfilImg from '../../images/perfil.png';
 import casco2Img from '../../images/casco2.png';
@@ -11,9 +10,11 @@ import perfilaImg from '../../images/perfila.png';
 import laguntzaImg from '../../images/laguntza.png';
 import terminosImg from '../../images/terminos.png';
 import logomainblancoImg from '../../images/logomainblanco.png';
+import { useState } from 'react';
 
 function Hasiera() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [locale, setLocale] = useState(document.documentElement.lang); // Idioma actual
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -44,6 +45,26 @@ function Hasiera() {
 
   }
 
+  const handleLanguageChange = async (event) => {
+    const selectedLanguage = event.target.value;
+    try {
+      const response = await fetch(`/set-locale/${selectedLanguage}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      if (response.ok) {
+        setLocale(selectedLanguage); 
+        window.location.reload(); 
+      } else {
+        throw new Error('Error al cambiar idioma');
+      }
+    } catch (error) {
+      console.error('Error cambiando el idioma:', error);
+    }
+  };
+
   return (
     <>
       <div className={`overlay ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
@@ -62,18 +83,23 @@ function Hasiera() {
 
         {/* Barra lateral */}
         <div className={`sidebar ${menuOpen ? 'open' : ''}`}>
-          <button className="close-btn" onClick={toggleMenu}>
-            ×
-          </button>
-          
+          <div className="sidebar-header">
+            <button className="close-btn" onClick={toggleMenu}>
+              ×
+            </button>
+           <select value={locale} onChange={handleLanguageChange}>
+              <option value="eu">Euskera</option>
+              <option value="es">Español</option>
+            </select> 
+          </div>
+
           <ul>
-            <div className='perfil'>
+            <div className="perfil">
               <form onSubmit={logOut}>
                 <img src={perfilImg} alt="Perfil" />
                 <p>macacopeleon</p>
                 <button type="submit">Sesioa itxi</button>
               </form>
-              
             </div>
             <hr />
             <li>
