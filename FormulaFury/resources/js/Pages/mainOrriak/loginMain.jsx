@@ -7,7 +7,7 @@ import Login from '@/Components/Login.jsx';
 function loginMain(){
 return(
   <>
-    <Login />
+    <Hasiera />
   </>
 );
 }

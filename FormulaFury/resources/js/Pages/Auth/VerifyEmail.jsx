@@ -1,6 +1,9 @@
 import PrimaryButton from '@/Components/PrimaryButton';
 import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
+import fondo from '@/../assets/video/video.mp4';
+import '@/../css/loginOrria/verify.css'
+
 
 export default function VerifyEmail({ status }) {
     const { post, processing } = useForm({});
@@ -12,14 +15,19 @@ export default function VerifyEmail({ status }) {
     };
 
     return (
+      
         <GuestLayout>
-            <Head title="Email Verification" />
+            <video className="video-background" autoPlay muted loop>
+          <source src={fondo} type="video/mp4" />
+        </video>
 
-            <div className="mb-4 text-sm text-gray-600">
-                Thanks for signing up! Before getting started, could you verify
-                your email address by clicking on the link we just emailed to
-                you? If you didn't receive the email, we will gladly send you
-                another.
+            <div className="mb-4 text-sm text-white">
+                
+Mila esker izena emateagatik! Hasi aurretik, egiazta dezakezu?
+zure helbide elektronikoa, posta elektronikoz bidali berri dugun estekan klik eginez.
+Zu? Ez baduzu posta elektronikoa jaso, pozik bidaliko dizugu.
+beste bat.
+
             </div>
 
             {status === 'verification-link-sent' && (
@@ -31,17 +39,20 @@ export default function VerifyEmail({ status }) {
 
             <form onSubmit={submit}>
                 <div className="mt-4 flex items-center justify-between">
-                    <PrimaryButton disabled={processing}>
-                        Resend Verification Email
+                    <PrimaryButton
+                        className="bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                        disabled={processing}
+                    >
+                        Berbidali egiazpaten email-a
                     </PrimaryButton>
 
                     <Link
                         href={route('logout')}
                         method="post"
                         as="button"
-                        className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        className="rounded-md text-sm text-white underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
-                        Log Out
+                        Saioa itxi
                     </Link>
                 </div>
             </form>

@@ -13,7 +13,7 @@
   
     }
     .dena{
-      margin-left: 13%;
+        background-color: rgba(0, 0, 0, 0.39);
     }
     
     /* Contenedor principal */
@@ -27,7 +27,12 @@
       padding: 20px;
       text-align: center;
       margin: auto;
+
       
+    }
+    .egiaztatu {
+        font-size: 30px;
+        color: white;
     }
     .logos{
         
@@ -40,7 +45,7 @@
     }
     
     /* Botón de Registrate */
-    button.sartu {
+    button.resend {
       background-color: #ff0019; /* Rojo Danger */
       color: rgb(255, 255, 255);
       font-weight: bolder;
@@ -54,7 +59,7 @@
       margin-bottom: 10px; /* Menos separación entre los botones */
     }
     
-    button.sartu:hover {
+    button.resend:hover {
       background-color: #000; /* Fondo negro en hover */
       color: rgb(255, 0, 0); /* Texto blanco en hover */
     }
@@ -72,36 +77,9 @@
     
       /* Filtros más fuertes */
       filter: grayscale(100%) brightness(30%) contrast(80%);
-      opacity: 0.3; /* Aún más transparente */
+      opacity: 0.2; /* Aún más transparente */
     }
-    .login-form {
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-      }
-      
-      .login-input {
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
-        border: none;
-        border-bottom: 2px solid white;
-        background-color: #333;
-        color: white;
-        outline: none;
-      }
-      
-      .login-input::placeholder {
-        color: #bbb;
-      }
-      
-      .forgot-password, .account-link {
-        color: white;
-        margin-bottom: 10px;
-        text-decoration: none;
-      }
+    
       
       .sesioa{
         text-align: left;

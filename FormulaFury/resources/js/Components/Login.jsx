@@ -1,75 +1,61 @@
-import { useForm } from '@inertiajs/react';
-import '../../css/loginOrria/register.css';
-import fondo from '@/../assets/video/video.mp4';
+import PrimaryButton from '@/Components/PrimaryButton';
+import GuestLayout from '@/Layouts/GuestLayout';
+import { Head, Link, useForm } from '@inertiajs/react';
+import fondo from '../../assets/video/video.mp4';
+import '@/../css/loginOrria/verify.css'
 
-function Login() {
-  const { data, setData, post, processing, errors, reset } = useForm({
-    email: '',
-    password: ''
-  });
 
-  const submit = (e) => {
-    e.preventDefault();
-    post(route('login'), {
-      onFinish: () => reset('password'),
-    });
-  };
+export default function VerifyEmail({ status }) {
+    const { post, processing } = useForm({});
 
-  return (
-    <>
-      <div className='container text-center'>
-        <video className="video-background" autoPlay muted loop>
+    const submit = (e) => {
+        e.preventDefault();
+
+        post(route('verification.send'));
+    };
+
+    return (
+      
+        <GuestLayout>
+            <video className="video-background" autoPlay muted loop>
           <source src={fondo} type="video/mp4" />
         </video>
 
-       
+            <div className="mb-4 text-sm text-white">
+                
+Mila esker izena emateagatik! Hasi aurretik, egiazta dezakezu?
+zure helbide elektronikoa, posta elektronikoz bidali berri dugun estekan klik eginez.
+Zu? Ez baduzu posta elektronikoa jaso, pozik bidaliko dizugu.
+beste bat.
 
-        <div>
-        <div className='sesioa'>
-        <a href="/">
+            </div>
 
-        <div className='atzeraDiv'>
-        <p>&lt; </p> <p  className='atzera'>Atzera</p>
-        </div>
-        </a>
+            {status === 'verification-link-sent' && (
+                <div className="mb-4 text-sm font-medium text-green-600">
+                    A new verification link has been sent to the email address
+                    you provided during registration.
+                </div>
+            )}
 
-        <p>Ongi etorri!</p>
-        </div>
-          <form className='login-form' onSubmit={submit}>
-            <input
-              className='login-input'
-              type="email"
-              name="email"
-              placeholder='E-mail'
-              value={data.email}
-              onChange={(e) => setData('email', e.target.value)}
-            />
-            {errors.email && <div className="error-message">{errors.email}</div>}
+            <form onSubmit={submit}>
+                <div className="mt-4 flex items-center justify-between">
+                    <PrimaryButton
+                        className="bg-red-600 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                        disabled={processing}
+                    >
+                        Berbidali egiazpaten email-a
+                    </PrimaryButton>
 
-            <input
-              className='login-input'
-              type="password"
-              name="password"
-              placeholder='Pasahitza'
-              value={data.password}
-              onChange={(e) => setData('password', e.target.value)}
-            />
-            {errors.password && <div className="error-message">{errors.password}</div>}
-
-            <div className='onartu'>
-  <input type="checkbox" name="onartu" id="check" className="black-checkbox circular-checkbox" />
-  <p>
-    Irakurri dut eta onartzen dut Formula Fury enpresak zure datuekin 
-    <a href=""> nahi duena </a> egiten ahal duela
-  </p>
-</div>
-
-            <button className='sartu' type='submit' disabled={processing}>Sartu</button>
-          </form>
-        </div>
-      </div>
-    </>
-  );
+                    <Link
+                        href={route('logout')}
+                        method="post"
+                        as="button"
+                        className="rounded-md text-sm text-white underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    >
+                        Saioa itxi
+                    </Link>
+                </div>
+            </form>
+        </GuestLayout>
+    );
 }
-
-export default Login;

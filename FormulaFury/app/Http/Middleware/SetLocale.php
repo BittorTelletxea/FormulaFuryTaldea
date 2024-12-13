@@ -12,8 +12,14 @@ class SetLocale
 {
     public function handle($request, Closure $next)
     {
-        $locale = Session::get('locale', config('app.locale'));
-        App::setLocale($locale);
+        $locale = $request->get('locale', session('locale', config('app.locale')));
+
+        // Establecer el idioma en Laravel
+        app()->setLocale($locale);
+
+        // Guardar el idioma en sesión
+        session(['locale' => $locale]);
+
         return $next($request);
     }
 }

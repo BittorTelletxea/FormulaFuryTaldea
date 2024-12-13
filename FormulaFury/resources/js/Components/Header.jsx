@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { usePage } from '@inertiajs/react';
 import '../../css/header.css';
 import perfilImg from '../../images/perfil.png';
 import casco2Img from '../../images/casco2.png';
@@ -10,11 +12,13 @@ import perfilaImg from '../../images/perfila.png';
 import laguntzaImg from '../../images/laguntza.png';
 import terminosImg from '../../images/terminos.png';
 import logomainblancoImg from '../../images/logomainblanco.png';
-import { useState } from 'react';
 
-function Hasiera() {
+function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [locale, setLocale] = useState(document.documentElement.lang); // Idioma actual
+  const [locale, setLocale] = useState(document.documentElement.lang);
+  const { translations } = usePage().props;
+
+  console.log(translations);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -22,28 +26,24 @@ function Hasiera() {
 
   const logOut = async (event) => {
     event.preventDefault();
-    console.log('sartu da sesioa itxi');
     try {
-      
       const response = await fetch('/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'), 
+          'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
         },
       });
 
       if (response.ok) {
-        
-        window.location.href = '/'; 
+        window.location.href = '/';
       } else {
         throw new Error('Error al cerrar sesión');
       }
     } catch (error) {
       console.error('Error al hacer logout:', error);
     }
-
-  }
+  };
 
   const handleLanguageChange = async (event) => {
     const selectedLanguage = event.target.value;
@@ -55,8 +55,8 @@ function Hasiera() {
         },
       });
       if (response.ok) {
-        setLocale(selectedLanguage); 
-        window.location.reload(); 
+        setLocale(selectedLanguage);
+        window.location.reload();
       } else {
         throw new Error('Error al cambiar idioma');
       }
@@ -87,10 +87,10 @@ function Hasiera() {
             <button className="close-btn" onClick={toggleMenu}>
               ×
             </button>
-           <select value={locale} onChange={handleLanguageChange}>
+            <select value={locale} onChange={handleLanguageChange} className="language-select">
               <option value="eu">Euskera</option>
               <option value="es">Español</option>
-            </select> 
+            </select>
           </div>
 
           <ul>
@@ -98,45 +98,45 @@ function Hasiera() {
               <form onSubmit={logOut}>
                 <img src={perfilImg} alt="Perfil" />
                 <p>macacopeleon</p>
-                <button type="submit">Sesioa itxi</button>
+                <button type="submit">{translations.header.sesioaitxi}</button>
               </form>
             </div>
             <hr />
             <li>
               <img src={casco2Img} alt="Nire ligak" />
-              <p>Nire ligak</p>
+              <p>{translations.header.nireligak}</p>
             </li>
             <li>
               <img src={rankingImg} alt="Ranking" />
-              <p>Ranking</p>
+              <p>{translations.header.ranking}</p>
             </li>
             <li>
               <img src={lasterketaImg} alt="Lasterketak" />
-              <p>Lasterketak</p>
+              <p>{translations.header.lasterketak}</p>
             </li>
             <li>
               <img src={megafonoImg} alt="Albisteak" />
-              <p>Albisteak</p>
+              <p>{translations.header.albisteak}</p>
             </li>
             <li>
               <img src={maletinImg} alt="Merkatua" />
-              <p>Merkatua</p>
+              <p>{translations.header.merkatua}</p>
             </li>
             <li>
               <img src={bajakImg} alt="Bajak" />
-              <p>Bajak</p>
+              <p>{translations.header.bajak}</p>
             </li>
             <li>
               <img src={perfilaImg} alt="Profila" />
-              <p>Profila</p>
+              <p>{translations.header.profila}</p>
             </li>
             <li>
               <img src={laguntzaImg} alt="Laguntza" />
-              <p>Laguntza</p>
+              <p>{translations.header.laguntza}</p>
             </li>
             <li>
               <img src={terminosImg} alt="Termino eta Kondizioak" />
-              <p>Termino eta kondizioak</p>
+              <p>{translations.header.terminoak}</p>
             </li>
           </ul>
         </div>
@@ -145,4 +145,4 @@ function Hasiera() {
   );
 }
 
-export default Hasiera;
+export default Header;

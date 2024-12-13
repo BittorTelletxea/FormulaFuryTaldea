@@ -33,7 +33,7 @@ function Login() {
         </div>
         </a>
 
-        <p>Sesioa hasi</p>
+        <p>Saioa hasi</p>
         </div>
           <form className='login-form' onSubmit={submit}>
             <input
