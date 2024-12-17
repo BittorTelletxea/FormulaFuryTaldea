@@ -115,7 +115,7 @@ function Header() {
             <hr />
             <li>
               <img src={casco2Img} alt="Nire ligak" />
-              <p>{translations.header.nireligak}</p>
+              <a href="nagusia"><p>{translations.header.nireligak}</p></a>
             </li>
             <li>
               <img src={rankingImg} alt="Ranking" />

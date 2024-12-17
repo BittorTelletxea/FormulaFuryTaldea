@@ -40,5 +40,13 @@ return [
         'plantilla' => 'Plantilla',
         'lasterketa' => 'Carrera',
         'balioa' => 'Valor',    
+    ],
+    'kontaktua' => [
+        'gurekin' => 'CONTACTA CON NOSOTROS',
+        'iritzia' => 'Tu opinión es importante para nosotros!',
+        'izena' => 'nombre',
+        'abizena' => 'apellido',
+        'mezua' => 'Escribe el mensaje que quieras...',
+        'bidali' => 'enviar'
     ]
 ];

@@ -42,5 +42,13 @@ return [
         'plantilla' => 'Plantilla',
         'lasterketa' => 'Lasterketa',
         'balioa' => 'Balioa',    
+    ],
+    'kontaktua' => [
+        'gurekin' => 'GUREKIN KONTAKTATU',
+        'iritzia' => 'Zure iritzia garrantzitsua da guretzat!',
+        'izena' => 'izena',
+        'abizena' => 'abizena',
+        'mezua' => 'Idatzi beharrezko mezua',
+        'bidali' => 'bidali'
     ]
 ];
