@@ -12,6 +12,10 @@ import perfilaImg from '../../images/perfila.png';
 import laguntzaImg from '../../images/laguntza.png';
 import terminosImg from '../../images/terminos.png';
 import logomainblancoImg from '../../images/logomainblanco.png';
+import instagram from '../../images/insta.png';
+import x from '../../images/twitter.png';
+import tiktok from '../../images/tiktok.png';
+
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -145,6 +149,14 @@ function Header() {
               <img src={terminosImg} alt="Termino eta Kondizioak" />
               <p>{translations.header.terminoak}</p>
             </li>
+            <li className='redes'>
+              <img src={instagram} alt="Instagram" />
+              <img src={x} alt="x" />
+              <img src={tiktok} alt="tiktok" />
+            </li> 
+            <li className='copyright'>
+              <p> © FormulaFury</p>  
+            </li>          
           </ul>
         </div>
       </div>

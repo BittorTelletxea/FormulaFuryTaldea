@@ -6,48 +6,49 @@
   font-family: 'MiFuente2';
   src: url('../../js/fonts/Questrial/Questrial-Regular.ttf') format('truetype');
 }
+
 .container1 {
   font-family: 'MiFuente';
   background-color: black;
-  position: fixed;
-  width: 69%; /* Ocupa todo el ancho de la pantalla */
-  bottom: 0; /* Fijo en la parte inferior */
+  width: 100%;
+  bottom: 0;
   z-index: 10;
-  display: flex; /* Flexbox para centrar contenido */
-  justify-content: center; /* Centrar elementos horizontalmente */
-  align-items: center; /* Centrar elementos verticalmente */
-  padding: 10px 0; /* Espaciado interno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  margin: auto;
 }
 
 .argazkiak {
   display: flex;
-  justify-content: space-around; /* Distribuir imágenes uniformemente */
-  align-items: center; /* Alinear imágenes al centro verticalmente */
-  gap: 20px; /* Espacio entre las imágenes */
-  width: 100%; /* Ajustar el ancho para centrar el contenido */
-  overflow: hidden; /* Prevenir desbordamiento */
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
 .argazkiak .img {
   text-align: center;
 }
-a{
+
+a {
   text-decoration: none;
   color: gray;
   font-size: 12px;
 }
+
 .argazkiak img {
-  max-width: 80px; /* Tamaño máximo de la imagen */
-  height: auto; /* Mantener proporción de la imagen */
+  max-width: 80px;
+  height: auto;
 }
 
 .argazkiak p {
   margin: 0;
   font-size: 12px;
-  color: grey; /* Color inicial */
-  transition: color 0.3s ease; /* Transición para hover */
+  color: grey;
+  transition: color 0.3s ease;
 }
 
 .ligak p {
@@ -55,5 +56,39 @@ a{
 }
 
 .argazkiak div:hover p, .argazkiak div:hover a {
-  color: red; /* Cambiar color al pasar el cursor */
+  color: red;
+}
+.klasifikazioa a{
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .argazkiak {
+    flex-wrap: wrap; /* Los elementos se colocan en múltiples filas */
+    gap: 10px; /* Reducir el espacio entre elementos */
+  }
+
+  .argazkiak img {
+    max-width: 60px; /* Reducir el tamaño de las imágenes */
+  }
+
+  .argazkiak p {
+    font-size: 10px; /* Reducir el tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .argazkiak {
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    align-items: center;
+  }
+
+  .argazkiak img {
+    max-width: 50px;
+  }
+
+  .argazkiak p {
+    font-size: 9px;
+  }
 }
