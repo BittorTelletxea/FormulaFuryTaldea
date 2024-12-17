@@ -11,6 +11,10 @@ import perfilaImg from '../../images/perfila.png';
 import laguntzaImg from '../../images/laguntza.png';
 import terminosImg from '../../images/terminos.png';
 import logomainblancoImg from '../../images/logomainblanco.png';
+import instagram from '../../images/insta.png';
+import x from '../../images/twitter.png';
+import tiktok from '../../images/tiktok.png';
+
 
 function Hasiera() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -112,6 +116,14 @@ function Hasiera() {
               <img src={terminosImg} alt="Termino eta Kondizioak" />
               <p>Termino eta kondizioak</p>
             </li>
+            <li className='redes'>
+              <img src={instagram} alt="Instagram" />
+              <img src={x} alt="x" />
+              <img src={tiktok} alt="tiktok" />
+            </li> 
+            <li className='copyright'>
+              <p> © FormulaFury</p>  
+            </li>          
           </ul>
         </div>
       </div>

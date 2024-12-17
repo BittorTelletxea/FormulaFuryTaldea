@@ -35,10 +35,12 @@ body {
     height: 300px;
     border-radius: 5px;
     padding: 20px;
+    justify-content: space-between;
+
 }
 .circuito img{
-    margin-left: 50%;
-    margin-top: 3%;
+    margin-left: 40%;
+    margin-top: 5%;
     width: 50%;
 }
 
@@ -48,6 +50,7 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 15%;
 }
 .kontaktatu{
     margin-top: 3%;

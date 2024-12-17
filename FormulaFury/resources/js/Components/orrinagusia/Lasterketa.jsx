@@ -32,23 +32,8 @@ function Lasterketa() {
             <button className='sortuLiga'><a href="../../kontaktua.html">Kontaktatu</a></button>
         </div>
         </div>
-        <div className='sozialak'>
-            <p>SARE SOZIALAK</p>
-        </div>
-        <div className='blanco3'>
-            <div className='imagenes'>
-            <div className='instagram'>
-                <img src={instagram} alt="" />
-            </div>
-            <div className='x'>
-                <img src={x} alt="" />
-            </div>
-            
-            <div className='tiktok'>
-                <img src={tiktok} alt="" />
-            </div>
-            </div>
-        </div>
+        
+        
     </div>
     </>
   );

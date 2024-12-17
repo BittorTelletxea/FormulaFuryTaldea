@@ -20,18 +20,16 @@ function Ligak() {
           </div>
           </div>
           <div className='ligak-info-eskubi'>
-            <img src="" alt=""/>
-            <div className='trespuntos'>
-            <div className='dirua'>
-            <div className='diruaDena'>
-            <img className='tres' src={trespuntos} alt="" />
-            <div className='dirua'>
-              <h3>20.000.000</h3>
-              <img src={euro} alt="" />
-              </div>
-              </div>
-            </div>
-            </div>
+                <div className='dirua'>
+                  <div className='diruaDena'>
+                    <img className='tres' src={trespuntos} alt="" />
+                    <div className='dirua'>
+                      <h3>20.000.000</h3>
+                      <img src={euro} alt="" />
+                    </div>
+                  </div>
+                </div>
+            
           </div>
         </div>
     </>
