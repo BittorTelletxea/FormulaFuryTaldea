@@ -1,6 +1,6 @@
 import "../../../css/taldeaOrria/gidaria.css"
 import tick from '../../../images/tick.png';
-import bearman from '../../../images/fernando.png';
+import bearman from '../../../images/bearman.png';
 
 function F2gidaria(){
     return(

@@ -1,100 +1,70 @@
-import Checkbox from '@/Components/Checkbox';
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
-import GuestLayout from '@/Layouts/GuestLayout';
-import { Head, Link, useForm } from '@inertiajs/react';
+import { useForm } from '@inertiajs/react';
+import '../../../css/loginOrria/login.css';
+import fondo from '@/../assets/video/video.mp4';
 
-export default function Login({ status, canResetPassword }) {
-    const { data, setData, post, processing, errors, reset } = useForm({
-        email: '',
-        password: '',
-        remember: false,
+function Login() {
+  const { data, setData, post, processing, errors, reset } = useForm({
+    email: '',
+    password: ''
+  });
+
+  const submit = (e) => {
+    e.preventDefault();
+    post(route('login'), {
+      onFinish: () => reset('password'),
     });
+  };
 
-    const submit = (e) => {
-        e.preventDefault();
+  return (
+    <>
+      <div className='container text-center'>
+        <video className="video-background" autoPlay muted loop>
+          <source src={fondo} type="video/mp4" />
+        </video>
 
-        post(route('login'), {
-            onFinish: () => reset('password'),
-        });
-    };
+       
 
-    return (
-        <GuestLayout>
-            <Head title="Log in" />
+        <div>
+        <div className='sesioa'>
+        <a href="/">
 
-            {status && (
-                <div className="mb-4 text-sm font-medium text-green-600">
-                    {status}
-                </div>
-            )}
+        <div className='atzeraDiv'>
+        <p>&lt; </p> <p  className='atzera'>Atzera</p>
+        </div>
+        </a>
 
-            <form onSubmit={submit}>
-                <div>
-                    <InputLabel htmlFor="email" value="Email" />
+        <p>Saioa hasi</p>
+        </div>
+          <form className='login-form' onSubmit={submit}>
+            <input
+              className='login-input'
+              type="email"
+              name="email"
+              placeholder='E-mail'
+              value={data.email}
+              onChange={(e) => setData('email', e.target.value)}
+            />
+            {errors.email && <div className="error-message">{errors.email}</div>}
 
-                    <TextInput
-                        id="email"
-                        type="email"
-                        name="email"
-                        value={data.email}
-                        className="mt-1 block w-full"
-                        autoComplete="username"
-                        isFocused={true}
-                        onChange={(e) => setData('email', e.target.value)}
-                    />
+            <input
+              className='login-input'
+              type="password"
+              name="password"
+              placeholder='Pasahitza'
+              value={data.password}
+              onChange={(e) => setData('password', e.target.value)}
+            />
+            {errors.password && <div className="error-message">{errors.password}</div>}
 
-                    <InputError message={errors.email} className="mt-2" />
-                </div>
-
-                <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
-
-                    <TextInput
-                        id="password"
-                        type="password"
-                        name="password"
-                        value={data.password}
-                        className="mt-1 block w-full"
-                        autoComplete="current-password"
-                        onChange={(e) => setData('password', e.target.value)}
-                    />
-
-                    <InputError message={errors.password} className="mt-2" />
-                </div>
-
-                <div className="mt-4 block">
-                    <label className="flex items-center">
-                        <Checkbox
-                            name="remember"
-                            checked={data.remember}
-                            onChange={(e) =>
-                                setData('remember', e.target.checked)
-                            }
-                        />
-                        <span className="ms-2 text-sm text-gray-600">
-                            Remember me
-                        </span>
-                    </label>
-                </div>
-
-                <div className="mt-4 flex items-center justify-end">
-                    {canResetPassword && (
-                        <Link
-                            href={route('password.request')}
-                            className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                        >
-                            Forgot your password?
-                        </Link>
-                    )}
-
-                    <PrimaryButton className="ms-4" disabled={processing}>
-                        Log in
-                    </PrimaryButton>
-                </div>
-            </form>
-        </GuestLayout>
-    );
+            <a className='forgot-password' href={route('password.request')}>
+              <b>Pasahitza ez dut gogoratzen</b>
+            </a>
+            <button className='sartu' type='submit' disabled={processing}>Sartu</button>
+          </form>
+        </div>
+      </div>
+    </>
+  );
 }
+
+export default Login;

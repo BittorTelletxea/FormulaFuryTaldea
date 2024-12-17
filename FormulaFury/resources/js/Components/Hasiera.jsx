@@ -13,9 +13,9 @@ function Hasiera() {
           <img src={logo} alt="Logo F1 Fury" />
         </div>
         <div className='login mt-4'>
-          <button className='registrar'>SORTU KONTUA</button><br />
+          <button className='registrar'><a href="/register">SORTU KONTUA</a></button><br />
             <button className='login'>
-            <a href="/nagusia">KONTUA BADUT</a>
+            <a href="/login">KONTUA BADUT</a>
             </button>
         </div>
       </div>

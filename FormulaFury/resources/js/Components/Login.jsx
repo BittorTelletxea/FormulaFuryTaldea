@@ -1,7 +1,7 @@
 import PrimaryButton from '@/Components/PrimaryButton';
 import GuestLayout from '@/Layouts/GuestLayout';
 import { Head, Link, useForm } from '@inertiajs/react';
-import fondo from '@/../assets/video/video.mp4';
+import fondo from '../../assets/video/video.mp4';
 import '@/../css/loginOrria/verify.css'
 
 

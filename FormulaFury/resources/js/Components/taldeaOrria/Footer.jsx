@@ -1,8 +1,8 @@
-import '../../../css/taldeaorria/footer.css';
-import cascoImg from '../../../images/casco.png';
-import klasifikazioaImg from '../../../images/klasifikazioa.png';
-import taldeaSelectedImg from '../../../images/taldeaSelected.png';
-import merkatuaImg from '../../../images/merkatua.png';
+import '../../../css/taldeaOrria/footer.css';
+import cascoImg from '../../../images/casco.png.png';
+import klasifikazioaImg from '../../../images/klasifikazioa.png.png';
+import taldeaSelectedImg from '../../../images/taldeaSelected.png.png';
+import merkatuaImg from '../../../images/merkatua.png.png';
 import aktibitateaImg from '../../../images/aktibitatea.png';
 
 function Footer() {
@@ -20,13 +20,13 @@ function Footer() {
             <div className='img'>
               <img src={klasifikazioaImg} alt="Klasifikazioa" />
             </div>
-            <a href="kontaktua.html">
+            <a href="klasifikazioa">
               Klasifikazioa
             </a>
           </div>
           <div className='taldeaInput'>
             <img src={taldeaSelectedImg} alt="Taldea Seleccionado" />
-            <a href="main.html">Taldea</a>
+            <a href="nagusia">Taldea</a>
           </div>
           <div className='merkatua'>
             <div className='img'>

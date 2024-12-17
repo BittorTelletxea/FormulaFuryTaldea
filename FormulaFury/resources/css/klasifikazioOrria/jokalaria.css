@@ -28,7 +28,11 @@ body {
     margin-bottom: 1px;
 
   }
-  
+  .blanco-liga img{
+    margin-top: 2%;
+    width: 70%;
+    height: 90px;
+  }
   .blanco-liga:hover {
     background-color: #242323; /* Gris oscuro */
     color: white; /* Cambia el color del texto a blanco */
@@ -45,12 +49,14 @@ body {
   }
  
   .usuario{
-    margin-left: 30%;
-  }
+
+   }
   p.usuarioIzena{
+    margin-left: 20%;
     font-size: 40px;
   }
   p.usuarioDirua{
+    margin-left: 20%;
     margin-top: -5%;
     color: gray;
     font-size: 19px;
@@ -93,6 +99,7 @@ body {
     justify-content: space-around;
   }
   .totalDiv{
+    font-family: 'MiFuente';
     margin-right: 13%;
   }
   .total p{

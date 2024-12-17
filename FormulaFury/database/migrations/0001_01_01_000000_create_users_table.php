@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('izena');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('pasahitza');
+            $table->string('password');
             $table->enum('mota', ['admin', 'langile', 'bezero']);
             $table->rememberToken();
             $table->timestamps();
