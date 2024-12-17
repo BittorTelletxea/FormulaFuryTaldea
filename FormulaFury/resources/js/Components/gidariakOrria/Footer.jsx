@@ -14,13 +14,13 @@ function Footer() {
           <div className='img'>
           <img src={casco}  />
           </div>
-          <p>Ligak</p>
+          <a href='nagusia'>Ligak</a>
         </div>
         <div className='klasifikazioa'>
           <div className='img'>
           <img src={klasifikazioa}  />
           </div>
-          <a href="kontaktua.html">
+          <a href="klasifikazioa">
           Klasifikazioa
           </a>
         </div>

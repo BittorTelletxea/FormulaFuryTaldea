@@ -40,6 +40,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/lang/{locale}', [LanguageController::class, 'switchLanguage'])->name('language.switch');
+Route::get('/set-locale/{language}', [LanguageController::class, 'setLocale']);
+
 
 
 require __DIR__.'/auth.php';

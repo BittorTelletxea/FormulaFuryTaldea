@@ -2,18 +2,18 @@
 
 return [
    
-    'goodbye' => '¡Adiós!',
+    'goodbye' => '¡Agur!',
     'select_language' => 'Aukeratu hizkuntza',
     'nagusia' => [
         'nireligak' => 'NIRE LIGAK',
         'ligasortu' => 'LIGA SORTU',
-        'hurrengo lastreketa' => 'HURRENGO LASTERKETA',
+        'hurrengola' => 'HURRENGO LASTERKETA',
         'GP' => 'GP',
         'IGA' => 'IGA',
         'ABE' => 'ABE',
         'kontaktatu' => 'GUREKIN KONTAKTATU',
         'iritzia'  => 'Zure iritzia garrantzitsua da guretzat!',
-        'kontaktatu' => 'Kontaktatu',
+        'kontaktatu2' => 'Kontaktatu',
         'saresozialak' => 'SARE SOZIALAK',
     ],
     'footer' => [
@@ -33,7 +33,7 @@ return [
         'bajak' => 'Bajak',
         'profila' => 'Profila',
         'laguntza' => 'Laguntza',
-        'Terminoak' => 'Termino eta kondizioak'
+        'terminoak' => 'Termino eta kondizioak'
     ],
     'taldea' => [
         'taldea' => 'Taldea',

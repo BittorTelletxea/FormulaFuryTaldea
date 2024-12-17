@@ -3,13 +3,16 @@ import Losail from '../../../images/Losail-removebg-preview.png';
 import instagram from '../../../images/instagram.png';
 import x from '../../../images/x.png';
 import tiktok from '../../../images/tiktok.png';
+import { useState } from 'react';
+import { usePage } from '@inertiajs/react';
 
 function Lasterketa() {
+    const { translations } = usePage().props;
   return (
     <>
     <div className='container'>
         <div className='hurrengo'>
-            <p>HURRENGO LASTERKETA</p>
+            <p>{ translations.nagusia.hurrengola }</p>
         </div>
         <div className='blanco'>
         <div className='lasterketa'>
@@ -24,16 +27,16 @@ function Lasterketa() {
         </div>
         </div>
         <div className='kontaktatu1'>
-            <p>GUREKIN KONTAKTATU</p>
+            <p>{ translations.nagusia.kontaktatu }</p>
         </div>
         <div className='blanco2'>
             <div className='kontakt'>
-            <p>Zure iritzia garrantzitsua da guretzat!</p>
-            <button className='sortuLiga'><a href="../../kontaktua.html">Kontaktatu</a></button>
+            <p>{ translations.nagusia.iritzia }</p>
+            <button className='sortuLiga'><a href="../../kontaktua">{ translations.nagusia.kontaktatu2 }</a></button>
         </div>
         </div>
         <div className='sozialak'>
-            <p>SARE SOZIALAK</p>
+            <p>{ translations.nagusia.saresozialak }</p>
         </div>
         <div className='blanco3'>
             <div className='imagenes'>

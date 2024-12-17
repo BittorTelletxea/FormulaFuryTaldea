@@ -17,6 +17,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [locale, setLocale] = useState(document.documentElement.lang);
   const { translations } = usePage().props;
+  const [dynamicTranslations, setDynamicTranslations] = useState(translations);
 
   console.log(translations);
 
@@ -47,6 +48,7 @@ function Header() {
 
   const handleLanguageChange = async (event) => {
     const selectedLanguage = event.target.value;
+    console.log('sartu da hizkuntza aldatu');
     try {
       const response = await fetch(`/set-locale/${selectedLanguage}`, {
         method: 'GET',
@@ -54,16 +56,21 @@ function Header() {
           'Content-Type': 'application/json',
         },
       });
+  
       if (response.ok) {
-        setLocale(selectedLanguage);
-        window.location.reload();
+        const data = await response.json();
+        setLocale(selectedLanguage);     
+        setDynamicTranslations(data);
+        window.location.reload();    
       } else {
-        throw new Error('Error al cambiar idioma');
+        console.error('Error al cambiar idioma. Código de respuesta:', response.status);
       }
     } catch (error) {
       console.error('Error cambiando el idioma:', error);
     }
   };
+  
+  
 
   return (
     <>
