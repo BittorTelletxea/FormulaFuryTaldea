@@ -3,16 +3,16 @@
 return [
    
     'goodbye' => '¡Adiós!',
-    'select_language' => 'Aukeratu hizkuntza',
+    'select_language' => 'Selecciona el idioma',
     'nagusia' => [
         'nireligak' => 'MIS LIGAS',
         'ligasortu' => 'CREAR LIGA',
-        'hurrengo lastreketa' => 'SIGUIENTE CARRERA',
+        'hurrengola' => 'SIGUIENTE CARRERA',
         'GP' => 'GP',
-        'kontaktatu' => 'KONTAKTA CON NOSOTROS',
+        'kontaktatu' => 'CONTACTA CON NOSOTROS',
         'iritzia'  => 'Tu opinion es importante para nosotros!',
-        'kontaktatu' => 'Contactanos',
-        'sare sozialak' => 'REDES SOCIALES',
+        'kontaktatu2' => 'Contactanos',
+        'saresozialak' => 'REDES SOCIALES',
     ],
     'footer' => [
         'ligak' => 'LIGAS',
@@ -31,7 +31,7 @@ return [
         'bajak' => 'Bajas',
         'profila' => 'Perfil',
         'laguntza' => 'Ayuda',
-        'Terminoak' => 'Termino y Condiciones'
+        'terminoak' => 'Termino y Condiciones'
     ],
     'taldea' => [
         'taldea' => 'Equipo',
@@ -40,5 +40,13 @@ return [
         'plantilla' => 'Plantilla',
         'lasterketa' => 'Carrera',
         'balioa' => 'Valor',    
+    ],
+    'kontaktua' => [
+        'gurekin' => 'CONTACTA CON NOSOTROS',
+        'iritzia' => 'Tu opinión es importante para nosotros!',
+        'izena' => 'nombre',
+        'abizena' => 'apellido',
+        'mezua' => 'Escribe el mensaje que quieras...',
+        'bidali' => 'enviar'
     ]
 ];

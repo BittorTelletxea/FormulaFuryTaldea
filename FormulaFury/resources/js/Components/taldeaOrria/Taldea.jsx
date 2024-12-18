@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import '../../../css/taldeaOrria/taldea.css';
 import F2gidaria from './F2gidaria';
 import F2gidaria2 from './F2gidaria2';
@@ -12,8 +12,11 @@ import fernando from '../../../images/fernando.png';
 import euroTaldeaImg from '../../../images/euroTaldea.png';
 import f1Img from '../../../images/f1.png';
 import f2Img from '../../../images/f2.png';
+import { useState } from 'react';
+import { usePage } from '@inertiajs/react';
 
 function Taldea() {
+  const { translations } = usePage().props;
   return (
     <>
       <div className="main-container">
@@ -21,7 +24,7 @@ function Taldea() {
         <div className="talde">
           <div className="plantilla">
             <div className="plantillaLetra">
-              <p>PLANTILLA</p>
+              <p>{ translations.taldea.plantilla }</p>
             </div>
             <div className="totala">
               <p className="text-white">5/5</p>
@@ -29,7 +32,7 @@ function Taldea() {
           </div>
           <div className="lasterketa">
             <div className="lasterketaLetra">
-              <p>LATERKETA</p>
+              <p>{ translations.taldea.lasterketa }</p>
             </div>
             <div className="eguna">
               <p className="text-white">IGA 5 , 20:00 </p>
@@ -37,7 +40,7 @@ function Taldea() {
           </div>
           <div className="balorea">
             <div className="baloreaLetra">
-              <p>BALOREA</p>
+              <p>{ translations.taldea.balioa }</p>
             </div>
             <div className="totalaBalorea">
               <p className="text-white">560.000.000</p>

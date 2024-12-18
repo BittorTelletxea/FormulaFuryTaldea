@@ -7,14 +7,24 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: 'resources/js/app.jsx',
-            refresh: true,
-        }),
-        react(),
-    ],
-    define: {
-        'process.env.APP_URL': JSON.stringify(process.env.APP_URL || 'http://localhost'),  // Usa un valor predeterminado si APP_URL no está definida
+  plugins: [
+    laravel({
+      input: ['resources/js/app.jsx'],
+      refresh: true,
+    }),
+    react(),
+  ],
+  server: {
+    host: '0.0.0.0', // Permite acceso desde otros dispositivos
+    port: 5173,      // Puerto para Vite
+    hmr: {
+      host: '10.14.0.235', // Reemplaza con la IP local de tu máquina
+      port: 5173,
     },
+  },
+  resolve: {
+    alias: {
+      '@': '/resources/js', // Define el alias @ para tu proyecto
+    },
+  },
 });

@@ -13,4 +13,21 @@ class LanguageController extends Controller
         }
         return back();
     }
+
+    public function setLocale($language)
+    {
+        // Validar el idioma
+        if (!in_array($language, ['eu', 'es'])) {
+            return response()->json(['error' => 'Idioma no soportado'], 400);
+        }
+
+        // Establecer el idioma en la sesión
+        session()->put('locale', $language);
+        app()->setLocale($language);
+
+        // Devolver las traducciones o una respuesta vacía
+        return response()->json([
+            'header' => __('header')  // O cualquier otro conjunto de traducciones
+        ]);
+    }
 }

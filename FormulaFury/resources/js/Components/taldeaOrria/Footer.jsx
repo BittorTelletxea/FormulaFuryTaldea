@@ -14,7 +14,9 @@ function Footer() {
             <div className='img'>
               <img src={cascoImg} alt="Casco" />
             </div>
-            <p>Ligak</p>
+            <a href="nagusia">
+              <p>Ligak</p>
+            </a>
           </div>
           <div className='klasifikazioa'>
             <div className='img'>

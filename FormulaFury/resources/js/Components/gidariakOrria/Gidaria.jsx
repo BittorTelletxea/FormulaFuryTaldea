@@ -50,7 +50,7 @@ function Gidaria() {
             <div className='candado'>
           <img src={candadoRojo} alt="" />
           </div>
-          <p className='numeroPrecio'>15 egun</p>
+          <p className='numeroPrecio'>14 egun</p>
         </div>
         </div>
         </div>

@@ -1,9 +1,11 @@
 
 import React, { useRef, useState } from "react";
+import { usePage } from '@inertiajs/react';
 
 function Kontaktua() {
     const [value, setValue] = useState(""); 
     const textareaRef = useRef(null); 
+    const { translations } = usePage().props;
   
     const handleInput = (e) => {
       const textarea = textareaRef.current;
@@ -15,19 +17,19 @@ function Kontaktua() {
     <>
         <div className='kontaktatu'>
             <div>
-                <h1>GUREKIN KONTAKTATU</h1><br/>
+                <h1>{translations.kontaktua.gurekin}</h1><br/>
             </div>  
             <div className='blanco2'>
                 <div className='kontakt'>
-                    <p>Zure iritzia garrantzitsua da guretzat!</p>
+                    <p>{translations.kontaktua.iritzia}</p>
                     <form>
                         <div className="form-row">
                             <div className="form-group col-md-6">
                                 
-                                <input type="text"  id="inputEmail" placeholder="izena"/>
+                                <input type="text"  id="inputEmail" placeholder={translations.kontaktua.izena}/>
                                 
                                 
-                                <input type="text" id="abizenaInput" placeholder="abizena"/>
+                                <input type="text" id="abizenaInput" placeholder={translations.kontaktua.abizena}/>
                             </div>
                             <div className="form-group col-md-6">
                                 
@@ -40,7 +42,7 @@ function Kontaktua() {
                                 <textarea 
                                     name="mazuaInput" 
                                     id="mezuaInput"
-                                    placeholder='Idatzi beharrezko mezua...'
+                                    placeholder={translations.kontaktua.mezua}
                                     ref={textareaRef}
                                     value={value}
                                     onChange={handleInput} 
@@ -48,7 +50,7 @@ function Kontaktua() {
                             </div>
                             <div className="form-group">
                                 
-                                <button className='bidali'>Bidali</button>
+                                <button className='bidali'>{translations.kontaktua.bidali}</button>
                             </div>
                         </div>
                     </form>

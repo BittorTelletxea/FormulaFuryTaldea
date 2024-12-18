@@ -3,7 +3,7 @@ import '../../../css/gidariaOrria/gidaria.css';
 import '../../../css/gidariaOrria/contenedor.css';
 
 import Footer from './Footer';
-import Header from './Header';
+import Header from '../../Components/taldeaOrria/Header';
 import Gidaria from './Gidaria';
 import signoEuro from '../../../images/euroTaldea.png';
 
@@ -34,7 +34,7 @@ function Contenedor(){
               <p>BALOREA</p>
             </div>
             <div className="totalaBalorea">
-              <p className="text-white">560.000.000</p>
+              <p className="text-white">550.000.000</p>
               <img src={signoEuro} alt="" />
             </div>
           </div>
