@@ -10,9 +10,8 @@
 .container1 {
   font-family: 'MiFuente';
   background-color: black;
-  width: 100%;
-  bottom: 0;
-  z-index: 10;
+  width: 69%;
+  margin: auto; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +25,7 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  flex-wrap: wrap;
 }
 
 .argazkiak .img {
@@ -58,29 +57,32 @@ a {
 .argazkiak div:hover p, .argazkiak div:hover a {
   color: red;
 }
-.klasifikazioa a{
-
-}
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .container1{
+    width: 100%;
+  }
   .argazkiak {
-    flex-wrap: wrap; /* Los elementos se colocan en múltiples filas */
-    gap: 10px; /* Reducir el espacio entre elementos */
+    flex-wrap: wrap; 
+    gap: 10px; 
   }
 
   .argazkiak img {
-    max-width: 60px; /* Reducir el tamaño de las imágenes */
+    max-width: 60px;
   }
 
   .argazkiak p {
-    font-size: 10px; /* Reducir el tamaño del texto */
+    font-size: 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .container1{
+    width: 100%;
+  }
   .argazkiak {
-    flex-direction: column; /* Los elementos se apilan verticalmente */
+    flex-direction: column;
     align-items: center;
   }
 
