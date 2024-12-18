@@ -84,8 +84,8 @@ function Header() {
         </div>
         </div>
         <div className='sekzioak'>
-        <div className='taldea'>
-            <p>Taldea</p>
+        <div className='talde'>
+            <a href='taldea'>Taldea</a>
         </div>
         <div className='gidariak'>
             <p>Gidariak</p>

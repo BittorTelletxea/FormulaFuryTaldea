@@ -13,7 +13,9 @@ function Nagusia() {
               <p>{translations.nagusia.nireligak}</p>
               <button className='sortuLiga'>{translations.nagusia.ligasortu}</button>
           </div>
+          <a href="klasifikazioa">
           <Liga />  
+          </a>
         </div>
       </div>
     </>

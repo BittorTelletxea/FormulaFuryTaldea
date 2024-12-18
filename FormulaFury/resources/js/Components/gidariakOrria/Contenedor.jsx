@@ -2,8 +2,8 @@ import { useState } from 'react';
 import '../../../css/gidariaOrria/gidaria.css';
 import '../../../css/gidariaOrria/contenedor.css';
 
-import Footer from './Footer';
-import Header from '../../Components/taldeaOrria/Header';
+import Footer from '@/Components/taldeaOrria/Footer';
+import Header from '../../Components/gidariakOrria/Header';
 import Gidaria from './Gidaria';
 import signoEuro from '../../../images/euroTaldea.png';
 

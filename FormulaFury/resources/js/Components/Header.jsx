@@ -15,6 +15,8 @@ import logomainblancoImg from '../../images/logomainblanco.png';
 import instagram from '../../images/insta.png';
 import x from '../../images/twitter.png';
 import tiktok from '../../images/tiktok.png';
+import globeIcon from '../../images/globe.png'; 
+
 
 
 function Header() {
@@ -98,19 +100,19 @@ function Header() {
             <button className="close-btn" onClick={toggleMenu}>
               ×
             </button>
-            <select value={locale} onChange={handleLanguageChange} className="language-select">
-              <option value="eu">Euskera</option>
-              <option value="es">Español</option>
-            </select>
+            <div className="language-select-wrapper">
+              <select value={locale} onChange={handleLanguageChange} className="language-select">
+                <option value="eu">Euskera</option>
+                <option value="es">Español</option>
+              </select>
+              <img src={globeIcon} alt="Language Selector" className="globe-icon" />
+            </div>
           </div>
 
           <ul>
             <div className="perfil">
-              <form onSubmit={logOut}>
                 <img src={perfilImg} alt="Perfil" />
                 <p>macacopeleon</p>
-                <button type="submit">{translations.header.sesioaitxi}</button>
-              </form>
             </div>
             <hr />
             <li>
@@ -149,6 +151,13 @@ function Header() {
               <img src={terminosImg} alt="Termino eta Kondizioak" />
               <p>{translations.header.terminoak}</p>
             </li>
+            <div className="logout-section">
+    <form onSubmit={logOut}>
+      <button type="submit" className="logout-button">
+        {translations.header.sesioaitxi}
+      </button>
+    </form>
+  </div> 
             <li className='redes'>
               <img src={instagram} alt="Instagram" />
               <img src={x} alt="x" />
@@ -156,7 +165,8 @@ function Header() {
             </li> 
             <li className='copyright'>
               <p> © FormulaFury</p>  
-            </li>          
+            </li>   
+                  
           </ul>
         </div>
       </div>

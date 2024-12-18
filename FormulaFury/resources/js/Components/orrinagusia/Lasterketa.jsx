@@ -35,23 +35,6 @@ function Lasterketa() {
             <button className='sortuLiga'><a href="../../kontaktua">{ translations.nagusia.kontaktatu2 }</a></button>
         </div>
         </div>
-        <div className='sozialak'>
-            <p>{ translations.nagusia.saresozialak }</p>
-        </div>
-        <div className='blanco3'>
-            <div className='imagenes'>
-            <div className='instagram'>
-                <img src={instagram} alt="" />
-            </div>
-            <div className='x'>
-                <img src={x} alt="" />
-            </div>
-            
-            <div className='tiktok'>
-                <img src={tiktok} alt="" />
-            </div>
-            </div>
-        </div>
     </div>
     </>
   );

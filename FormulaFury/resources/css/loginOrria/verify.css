@@ -77,7 +77,7 @@
     
       /* Filtros más fuertes */
       filter: grayscale(100%) brightness(30%) contrast(80%);
-      opacity: 0.2; /* Aún más transparente */
+      opacity: 0.6; /* Aún más transparente */
     }
     
       

@@ -11,11 +11,14 @@
     align-items: center; /* Centra el contenido verticalmente */
     position: relative; /* Para posicionar el botón de hamburguesa */
     padding: 10px 20px;
+    text-align: center;
+    margin-left: 20%;
   }
   .logo{
     margin: auto;
     margin-left: 45%;
   }
+ 
   
    
   /* Botón de hamburguesa (a la izquierda) */
@@ -27,6 +30,48 @@
     color: white; /* Ajusta según tu tema */
     position: absolute;
     left: 20px; /* Posición fija a la izquierda */
+  }
+  .language-select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 180px; /* Ajusta según el diseño */
+  }
+  
+  .language-select {
+    appearance: none; /* Oculta el estilo predeterminado del select */
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 10px 8px 40px; /* Espacio a la izquierda para el icono */
+    color: white; /* Color del texto por defecto */
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    justify-content: space-around;
+  }
+  
+  .language-select:focus {
+    outline: none;
+    border-color: #ccc;
+  }
+  
+  /* Opciones del select desplegable */
+  .language-select option {
+    background-color: #333; /* Fondo oscuro para las opciones desplegables */
+    color: white; /* Texto blanco para visibilidad */
+  }
+  
+  .language-select-wrapper .globe-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según el diseño */
+    width: 40px;
+    height: 20px;
+    pointer-events: none; /* Para que no interfiera con el clic */
+  }
+  
+  .globe-icon{
+    padding-right: 20px;
   }
   
   /* Sidebar styles */
@@ -89,6 +134,7 @@
     display: block; /* Mostrar cuando la barra está activa */
   }
   .perfil{
+    margin-top: 8%;
     display: flex;
     justify-content: space-around;
   }
@@ -127,6 +173,23 @@
        
 
 
+  }
+  .logout-button {
+    margin-top: 5%;
+    background-color: #ff0019; /* Rojo Danger */
+    color: rgb(255, 255, 255);
+    border: 2px solid #ff0019; /* Borde para consistencia */
+    border-radius: 0; /* Borde recto */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de color */
+    width: 200px; /* Ancho fijo de los botones */
+    text-align: center;
+    margin-bottom: 10px; /* Menos separación entre los botones */
+  }
+  
+  .logout-button:hover {
+    background-color: #000; /* Fondo negro en hover */
+    color: rgb(255, 0, 0); /* Texto blanco en hover */
   }
   .redes img{
     height: 20px;

@@ -4,7 +4,7 @@ import perfil from "../../../images/perfil.png";
 function Jokalaria() {
   return (
     <>
-      <div className='blanco-liga'>
+      <div className='blanco2-liga'>
         <div className='datuak'>
           <div className='posizioa'>
         <p>1</p>

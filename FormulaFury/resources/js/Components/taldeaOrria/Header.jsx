@@ -146,7 +146,7 @@ function Header() {
         </div>
         <div className='sekzioak'>
           <div className='taldea'>
-            <a href='taldea' style={{ textDecoration: 'none' }}><p>Taldea</p></a>
+            <a href='taldea' style={{ textDecoration: 'none', color: 'white' }}><p>Taldea</p></a>
           </div>
           <div className='gidariak'>
             <a href='gidariak' style={{ textDecoration: 'none' }}><p>Gidariak</p></a>

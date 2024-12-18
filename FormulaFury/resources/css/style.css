@@ -79,7 +79,7 @@ body {
   }
   
   button.login:hover {
-    color: rgb(255, 0, 0); /* Texto blanco en hover */
+    color: rgb(255, 255, 255); /* Texto blanco en hover */
     border-color: white; /* Borde blanco en hover */
   }
   

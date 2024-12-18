@@ -13,10 +13,13 @@ function Hasiera() {
           <img src={logo} alt="Logo F1 Fury" />
         </div>
         <div className='login mt-4'>
-          <button className='registrar'><a href="/register">SORTU KONTUA</a></button><br />
+
+        <a href="/register"> <button className='registrar'><a>SORTU KONTUA</a></button></a><br />
+          <a href="/login">
             <button className='login'>
-            <a href="/login">KONTUA BADUT</a>
+            <a>KONTUA BADUT</a>
             </button>
+            </a>
         </div>
       </div>
     </>

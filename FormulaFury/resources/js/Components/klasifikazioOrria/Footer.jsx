@@ -1,43 +1,58 @@
 import '../../../css/klasifikazioOrria/footer.css';
-
 import casco from '../../../images/casco.png.png';
-import klasifikazioaSelected from '../../../images/klasifikazioaSelected.png.png';
-import taldea from '../../../images/taldea.png.png';
-import merkatua from '../../../images/merkatua.png.png';
-import aktibitatea from '../../../images/aktibitatea.png';
+import klasifikazioa  from '../../../images/klasifikazioaSelected.png.png';
+import taldeaSelect  from '../../../images/taldea.png.png';
+import merkatua  from '../../../images/merkatua.png.png';
+import aktibitatea  from '../../../images/aktibitatea.png';
+import { useState } from 'react';
+import { usePage } from '@inertiajs/react';
 
 function Footer() {
+  const { translations } = usePage().props;
   return (
     <>
       <div className='container1 text-center fixed-bottom'>
         <div className='argazkiak'>
         <div className='ligak'>
+        <a href='nagusia'>
+
           <div className='img'>
-          <img src={casco} alt="" />
+          <img src={casco}  />
           </div>
-          <a href='nagusia'>Ligak</a>
+          {translations.footer.ligak}
+        </a>
         </div>
         <div className='klasifikazioa'>
+        <a href="klasifikazioa">
+
           <div className='img'>
-          <img src={klasifikazioaSelected} alt="" />
+          <img src={klasifikazioa}  />
           </div>
-          <p>Klasifikazioa</p>
+          {translations.footer.klasifikazioa}
+          </a>
         </div>
-        <div className='taldea'>
-          <img src={taldea} alt="" />
-          <a href='taldea'>Taldea</a>
+        
+        <div className='taldeaInput'>
+        <a href="taldea">
+          <img src={taldeaSelect}  />
+          {translations.footer.taldea}
+        </a>
         </div>
         <div className='merkatua'>
           <div className='img'>
-          <img src={merkatua} alt="" />
+          <img src={merkatua}  />
           </div>
-          <p>Merkatua</p>
+          <p>
+            {translations.footer.merkatua}
+          </p>
         </div>
         <div className='aktibitatea'>
           <div className='img'>
-          <img src={aktibitatea} alt="" />
+          <img src={aktibitatea}  />
           </div>
-          <p>Aktibitatea</p>
+          <p>
+            {translations.footer.aktibitatea}
+          </p>
         </div>
         </div>
         
