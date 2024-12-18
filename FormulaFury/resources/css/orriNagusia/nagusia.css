@@ -15,6 +15,9 @@
     justify-content: space-between;
     width: 100%;
 }
+a{
+  text-decoration: none;
+}
 .blanco-liga {
     background-color: white;
     color: black;
@@ -37,7 +40,6 @@
   }
   
 .hurrengo{
-    font-family: 'MiFuente', 'sans-serif';
     color: gray;
 }
 .sortu{

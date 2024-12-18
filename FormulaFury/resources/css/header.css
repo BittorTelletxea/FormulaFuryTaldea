@@ -6,13 +6,15 @@
   font-family: 'MiFuente2';
   src: url('../../js/fonts/Questrial/Questrial-Regular.ttf') format('truetype');
 }
+
 .header {
     display: flex;
     align-items: center; /* Centra el contenido verticalmente */
     position: relative; /* Para posicionar el botón de hamburguesa */
     padding: 10px 20px;
     text-align: center;
-    margin-left: 20%;
+    margin: auto;
+    
   }
   .logo{
     margin: auto;

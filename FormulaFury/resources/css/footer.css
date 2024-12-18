@@ -1,96 +1,94 @@
-@font-face {
-  font-family: 'MiFuente';
-  src: url('../../js/fonts/horizon.otf') format('truetype');
-}
-@font-face {
-  font-family: 'MiFuente2';
-  src: url('../../js/fonts/Questrial/Questrial-Regular.ttf') format('truetype');
-}
-
 .container1 {
-  font-family: 'MiFuente';
   background-color: black;
-  width: 69%;
-  margin: auto; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 69%; /* Ajusta el ancho deseado */
+  bottom: 0; /* Fijo en la parte inferior */
+  z-index: 10; /* Por encima de otros elementos */
+  display: flex; /* Flexbox para estructurar */
+  justify-content: center; /* Centrar elementos horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 10px 0; /* Espaciado interno */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  margin: auto; /* Centrar */
+  font-family: 'MiFuente'; /* Fuente personalizada */
+}
+.header{
+  text-align: center;
+  margin-left: 38%;
 }
 
 .argazkiak {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  flex-wrap: wrap;
+  justify-content: space-around; /* Distribuir uniformemente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 20px; /* Espaciado entre elementos */
+  width: 100%; /* Ocupa todo el ancho */
+  overflow: hidden; /* Prevenir desbordamientos */
 }
 
-.argazkiak .img {
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: gray;
-  font-size: 12px;
+.argazkiak > div {
+  flex: 1; /* Todos los elementos ocupan el mismo espacio */
+  text-align: center; /* Centrar contenido */
+  min-width: 80px; /* Establecer un ancho mínimo constante */
 }
 
 .argazkiak img {
-  max-width: 80px;
-  height: auto;
+  max-width: 80px; /* Tamaño máximo estándar */
+  height: auto; /* Mantener proporción */
+  margin-left: 36%;
 }
 
-.argazkiak p {
-  margin: 0;
-  font-size: 12px;
-  color: grey;
-  transition: color 0.3s ease;
+.taldeaInput img {
+  max-width: 200px; /* Imagen más grande para taldeaInput */
+  height: auto; /* Mantener proporción */
+  margin-left: -1%;
+
 }
 
-.ligak p {
-  color: rgb(213, 7, 7);
+.argazkiak div {
+  position: relative; /* Permite posicionamiento de elementos internos */
 }
 
-.argazkiak div:hover p, .argazkiak div:hover a {
+.taldeaInput img {
+  position: absolute; /* Posicionar la imagen dentro del contenedor */
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%) scale(1.5); /* Ajustar tamaño y centrar */
+}
+.taldeaInput {
+    display: flex; /* Usar flexbox para organizar contenido */
+    flex-direction: column; /* Organizar en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    position: relative; /* Necesario para la posición interna */
+  }
+  
+  .taldeaInput img {
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener proporción */
+  }
+  
+  .taldeaInput a {
+    margin: 80px 0 0 0; /* Espacio superior específico */
+    padding: 0; /* Asegurar que no hay padding adicional */
+    font-size: 14px; /* Ajustar tamaño del texto */
+    text-align: center; /* Centrar texto */
+    text-decoration: none;
+  }
+  
+.klasifikazioa a,.taldea a, .ligak a{
+    text-decoration: none;
+}
+.ligak a{
   color: red;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .container1{
-    width: 100%;
-  }
-  .argazkiak {
-    flex-wrap: wrap; 
-    gap: 10px; 
-  }
-
-  .argazkiak img {
-    max-width: 60px;
-  }
-
-  .argazkiak p {
-    font-size: 10px;
-  }
+.argazkiak p, a {
+  font-size: 12px; /* Tamaño del texto */
+  color: gray; /* Color inicial */
 }
 
-@media (max-width: 480px) {
-  .container1{
-    width: 100%;
-  }
-  .argazkiak {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .argazkiak img {
-    max-width: 50px;
-  }
-
-  .argazkiak p {
-    font-size: 9px;
-  }
+.argazkiak div:hover p,
+.argazkiak div:hover a {
+  color: red; /* Cambiar el color al pasar el cursor */
 }
